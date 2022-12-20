@@ -2,6 +2,11 @@
 
 namespace Demo.Clip02
 {
+    /// <summary>
+    /// Envuelve o encapsula el book
+    /// para un mejor compartamiento
+    /// 
+    /// </summary>
     class WrappedBook : Book
     {
         public WrappedBook(Book other) : base(other)

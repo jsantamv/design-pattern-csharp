@@ -13,6 +13,12 @@ namespace Demo.Clip02
             this.Dimensions = dimensions;
         }
 
+        /// <summary>
+        /// Se crea un nuevo constructor para recbir por parametro
+        /// otra instancia de book y poder armar otro libro con ;
+        /// la misma estructura. 
+        /// </summary>
+        /// <param name="other"></param>
         protected Book(Book other) : this(other.Title, other.Dimensions)
         {
         }
