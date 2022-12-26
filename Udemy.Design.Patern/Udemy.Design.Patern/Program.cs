@@ -15,6 +15,3 @@ contextA.Ejecutar();
 #endregion
 
 
-VehicleInsuranceCustomerProfile vehicleInsurance = new VehicleInsuranceCustomerProfile();
-
-Console.WriteLine(vehicleInsurance.IsLoyalCustomer());

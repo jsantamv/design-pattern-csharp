@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Udemy.Design.Patern.OpenClose
+namespace Udemy.Design.Patern.OpenClose.Interfaces
 {
     /// <summary>
     /// Software components should be closed for modification, 
