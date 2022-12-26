@@ -3,7 +3,13 @@ using Udemy.Design.Patern.Strategy;
 
 Console.WriteLine("Hello, World!");
 
+Contexto context = new Contexto(new AntivirusSimple());
 
-var client = new Client();
+context.Ejecutar();
 
-client.performTask();
+Console.WriteLine();
+
+Contexto contextA = new Contexto(new AntivirusAvanzado());
+
+contextA.Ejecutar();
+
