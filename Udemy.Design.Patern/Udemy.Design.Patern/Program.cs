@@ -16,7 +16,7 @@ using Udemy.Design.Patern.Strategy;
 //contextA.Ejecutar();
 #endregion
 
-
+#region Open Closed Principle
 Invoice Invoice = new();
 IList<Water> lstDrink = new List<Water>();
 
@@ -33,8 +33,8 @@ lstDrink.Add(new Water
     Price = 1012
 });
 
-
 var result = Invoice.GetTotal(lstDrink);
 
 Console.WriteLine($"Price is: {result}");
+#endregion
 
