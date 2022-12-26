@@ -10,7 +10,7 @@ namespace Udemy.Design.Patern.OpenClose
     {
         public bool IsLoyalCustomer()
         {
-            return true; // or false
+            return (new Random().Next(2)) % 2 == 0;
         }
     }
 }

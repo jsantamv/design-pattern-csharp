@@ -1,4 +1,5 @@
-﻿using Udemy.Design.Patern.Strategy;
+﻿using Udemy.Design.Patern.OpenClose;
+using Udemy.Design.Patern.Strategy;
 
 
 #region Strategy Pattern
@@ -13,3 +14,7 @@ Contexto contextA = new Contexto(new AntivirusAvanzado());
 contextA.Ejecutar();
 #endregion
 
+
+VehicleInsuranceCustomerProfile vehicleInsurance = new VehicleInsuranceCustomerProfile();
+
+Console.WriteLine(vehicleInsurance.IsLoyalCustomer());
