@@ -35,7 +35,5 @@ namespace Udemy.Design.Patern.SRP
             return Type;
         }
 
-
-
     }
 }
