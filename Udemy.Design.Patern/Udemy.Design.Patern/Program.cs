@@ -1,4 +1,6 @@
 ﻿using System.Xml.Linq;
+using Udemy.Design.Patern.Liskov;
+using Udemy.Design.Patern.Liskov.Interface;
 using Udemy.Design.Patern.OpenClose;
 using Udemy.Design.Patern.OpenClose.Drinks;
 using Udemy.Design.Patern.Strategy;
@@ -38,3 +40,15 @@ var result = Invoice.GetTotal(lstDrink);
 Console.WriteLine($"Price is: {result}");
 #endregion
 
+#region sustitución de Liskov
+
+Shape shape = new Circle();
+double area = shape.CalculateArea();
+
+Console.WriteLine($"area del circulo {area}");
+
+shape = new Rectangle();
+area = shape.CalculateArea();
+
+
+#endregion
