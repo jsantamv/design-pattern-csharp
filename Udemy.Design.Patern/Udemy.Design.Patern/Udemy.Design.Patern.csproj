@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="InterfaceSegration\" />
+    <Folder Include="InterfaceSegration\NewFolder\" />
   </ItemGroup>
 
 </Project>

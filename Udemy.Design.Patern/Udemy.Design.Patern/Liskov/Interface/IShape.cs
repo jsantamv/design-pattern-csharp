@@ -13,7 +13,7 @@ namespace Udemy.Design.Patern.Liskov.Interface
     /// entonces debe poder ser utilizada en cualquier lugar donde se espera la clase 
     /// base sin afectar el comportamiento del programa.
     /// </summary>
-    public interface Shape
+    public interface IShape
     {
         double CalculateArea();
     }
