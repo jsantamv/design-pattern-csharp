@@ -7,7 +7,7 @@ using Udemy.Design.Patern.Liskov.Interface;
 
 namespace Udemy.Design.Patern.Liskov
 {
-    public class Circle : Shape
+    public class Circle : IShape
     {
         public double Radius { get; set; }
 

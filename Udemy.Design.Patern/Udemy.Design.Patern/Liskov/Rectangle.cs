@@ -7,7 +7,7 @@ using Udemy.Design.Patern.Liskov.Interface;
 
 namespace Udemy.Design.Patern.Liskov
 {
-    public class Rectangle : Shape
+    public class Rectangle : IShape
     {
         public double Width { get; set; }
         public double Height { get; set; }

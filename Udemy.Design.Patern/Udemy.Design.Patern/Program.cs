@@ -1,5 +1,6 @@
 ﻿using System.Xml.Linq;
 using Udemy.Design.Patern.Liskov;
+using Udemy.Design.Patern.Liskov.Abstract;
 using Udemy.Design.Patern.Liskov.Interface;
 using Udemy.Design.Patern.OpenClose;
 using Udemy.Design.Patern.OpenClose.Drinks;
@@ -45,7 +46,7 @@ Console.WriteLine($"Price is: {result}");
 #region Sustitución de Liskov
 Console.WriteLine();
 Console.WriteLine("======< Sustitución de Liskov >======");
-Shape shape = new Circle();
+IShape shape = new Circle();
 double area = shape.CalculateArea();
 
 shape = new Rectangle();

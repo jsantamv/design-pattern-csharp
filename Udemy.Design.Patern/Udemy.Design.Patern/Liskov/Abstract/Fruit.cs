@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Udemy.Design.Patern.Liskov.Interface
+namespace Udemy.Design.Patern.Liskov.Abstract
 {
     public abstract class Fruit
     {
