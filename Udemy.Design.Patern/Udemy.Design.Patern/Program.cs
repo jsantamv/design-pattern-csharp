@@ -19,6 +19,8 @@ using Udemy.Design.Patern.Strategy;
 #endregion
 
 #region Open Closed Principle
+Console.WriteLine();
+Console.WriteLine("======< Open Closed Principle >======");
 Invoice Invoice = new();
 IList<Water> lstDrink = new List<Water>();
 
@@ -40,15 +42,19 @@ var result = Invoice.GetTotal(lstDrink);
 Console.WriteLine($"Price is: {result}");
 #endregion
 
-#region sustitución de Liskov
-
+#region Sustitución de Liskov
+Console.WriteLine();
+Console.WriteLine("======< Sustitución de Liskov >======");
 Shape shape = new Circle();
 double area = shape.CalculateArea();
-
-Console.WriteLine($"area del circulo {area}");
 
 shape = new Rectangle();
 area = shape.CalculateArea();
 
+
+Fruit fruit = new Orange();
+Console.WriteLine($"Orange: {fruit.GetColor()}");
+fruit = new Apple();
+Console.WriteLine($"Apple: {fruit.GetColor()}");
 
 #endregion
