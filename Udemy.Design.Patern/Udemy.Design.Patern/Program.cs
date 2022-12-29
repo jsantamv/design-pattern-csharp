@@ -63,7 +63,6 @@ Console.WriteLine($"Apple: {fruit.GetColor()}");
 
 #endregion
 
-
 #region Segregacion de Interface
 Console.WriteLine();
 Console.WriteLine("======< Segregacion de Interface >======");
@@ -78,4 +77,18 @@ double resta = op.Restar(23, 12);
 Console.WriteLine($"Resultado de la resta: {resta}");
 
 
+#endregion
+
+#region Validate Number wuth Pipes
+var input = "";
+
+string[] parts = input.Split('|');
+
+foreach (var item in parts)
+{
+    bool valid = true;
+    valid = int.TryParse(item, out int result);
+    Console.WriteLine($"Es numero: {valid} dato: {item}");
+    if (!valid) break;
+}
 #endregion
