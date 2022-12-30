@@ -20,6 +20,7 @@ namespace Udemy.Design.Patern.DependecyInjection
             this.logger = logger;
         }
 
+        
         public void Register(string username, string password)
         {
             // Aquí se puede hacer algún procesamiento de usuario...

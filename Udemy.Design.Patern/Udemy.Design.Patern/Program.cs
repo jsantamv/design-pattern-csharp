@@ -1,4 +1,6 @@
 ﻿using System.Xml.Linq;
+using Udemy.Design.Patern.DependecyInjection.Interface;
+using Udemy.Design.Patern.DependecyInjection;
 using Udemy.Design.Patern.InterfaceSegration;
 using Udemy.Design.Patern.InterfaceSegration.Interface;
 using Udemy.Design.Patern.Liskov;
@@ -80,15 +82,35 @@ Console.WriteLine($"Resultado de la resta: {resta}");
 #endregion
 
 #region Validate Number wuth Pipes
-var input = "";
 
-string[] parts = input.Split('|');
+//Console.WriteLine();
+//Console.WriteLine("======< Validate Number wuth Pipes >======");
+//var input = "";
 
-foreach (var item in parts)
-{
-    bool valid = true;
-    valid = int.TryParse(item, out int result);
-    Console.WriteLine($"Es numero: {valid} dato: {item}");
-    if (!valid) break;
-}
+//string[] parts = input.Split('|');
+
+//int result;
+//foreach (var item in parts)
+//{
+//    bool valid = true;
+//    valid = int.TryParse(item, out result);
+//    Console.WriteLine($"Es numero: {valid} dato: {item}");
+//    if (!valid) break;
+//}
+#endregion
+
+#region dependecy injection
+//Esto nos permite intercambiar fácilmente la implementación de ILogger utilizada por UserService
+//simplemente proporcionando una implementación diferente a través del constructor. Por ejemplo,
+//podríamos utilizar una implementación diferente de ILogger que escriba mensajes en un archivo en lugar de en la consola.
+
+//En resumen, la inyección de dependencia nos permite desacoplar la clase UserService de su dependencia ILogger
+//y mejorar la testabilidad, la mantenibilidad y la flexibilidad del código.
+Console.WriteLine();
+Console.WriteLine("======< dependecy injection >======");
+
+ILogger logger = new ConsoleLogger();
+UserService userService = new(logger);
+userService.Register("johndoe", "mypassword");
+
 #endregion
