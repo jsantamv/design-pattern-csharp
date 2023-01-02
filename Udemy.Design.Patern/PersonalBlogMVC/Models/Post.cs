@@ -1,0 +1,23 @@
+﻿using Amazon.DynamoDBv2.DataModel;
+
+namespace PersonalBlogMVC.Models
+{
+    [DynamoDBTable(tableName: "post")]
+    public class Post
+    {
+        /// <summary>
+        /// ctr
+        /// </summary>
+        public Post()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
+
+        [DynamoDBHashKey]
+        public string Id { get; set; }
+
+        public DateTime PostDateTime { get; set; }
+        public string? Title { get; set; }
+        public string? Content { get; set; }
+    }
+}
