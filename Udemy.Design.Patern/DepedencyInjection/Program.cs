@@ -1,4 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using DepedencyInjection;
+using DepedencyInjection.Interface;
 
+IDataAccess dal = new DataAccess();
+IBusiness bix = new Business(dal);
+
+var userInterface = new UserInterface(bix);
 
