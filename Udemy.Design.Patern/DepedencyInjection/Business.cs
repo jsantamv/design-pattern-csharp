@@ -16,8 +16,6 @@ namespace DepedencyInjection
             _dataAccess = dataAccess;
         }
 
-
-
         public void SingUp(string userName, string password)
         {
             // to do validations

@@ -11,6 +11,7 @@ namespace DepedencyInjection
     {
         public void Store(string user, string password)
         {
+            Console.WriteLine("Save in the database");
             //write the data to db
         }
 

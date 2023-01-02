@@ -9,6 +9,14 @@ namespace DepedencyInjection
 {
     internal class BusinessV2 : IBusiness
     {
+        private readonly IDataAccess _dataacces;
+
+        public BusinessV2(IDataAccess dataAccess)
+        {
+            _dataacces = dataAccess;
+        }
+
+
         public void SingUp(string userName, string password)
         {
             // to do validations Anotter conection

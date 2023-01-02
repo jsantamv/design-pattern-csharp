@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DepedencyInjection.Interface
+namespace DependecyInjection.Scope
 {
-    public interface IBusiness
+    public class TransientClass
     {
-        void SingUp(string? userName, string? password);
     }
 }
