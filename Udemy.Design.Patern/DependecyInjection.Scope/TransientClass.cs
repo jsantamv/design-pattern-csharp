@@ -8,5 +8,6 @@ namespace DependecyInjection.Scope
 {
     public class TransientClass
     {
+
     }
 }
